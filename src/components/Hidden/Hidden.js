@@ -2,8 +2,8 @@ import React from "react";
 
 import "./Hidden.css";
 
-const Hidden = ({}) => {
-  return <div className="Hidden"></div>
+const Hidden = ({ children, hidden }) => {
+  return <div className={`Hidden ${hidden && "hidden"}`}>{children}</div>
 };
 
 export default Hidden;
