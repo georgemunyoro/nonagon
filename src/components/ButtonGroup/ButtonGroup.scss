@@ -1,4 +1,31 @@
 @import "../../styles/theme";
 
 .ButtonGroup {
+  display: flex;
+}
+
+.ButtonGroup > .Button:last-child {
+  border-radius: 0 10px 10px 0;
+}
+
+.ButtonGroup > .Button:first-child {
+  border-radius: 10px 0 0 10px;
+}
+
+.ButtonGroup > .Button {
+  border-radius: 0;
+}
+
+// Vertical Button Group
+.ButtonGroup.vertical {
+  flex-direction: column;
+  width: max-content;
+}
+
+.ButtonGroup.vertical > .Button:last-child {
+  border-radius: 0 0 10px 10px;
+}
+
+.ButtonGroup.vertical > .Button:first-child {
+  border-radius: 10px 10px 0 0;
 }
