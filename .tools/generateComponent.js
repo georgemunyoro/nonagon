@@ -4,7 +4,7 @@ const { stderr } = require("process");
 const generateComponent = (componentName) => {
   const JSX = `import React from "react";\n\nimport "./${componentName}.css";\n\nconst ${componentName} = ({}) => {\n  return <div className="${componentName}"></div>\n};\n\nexport default ${componentName};\n`;
   const index = `export {default} from "./${componentName}";`;
-  const scss = `@import ("../../styles/theme");\n\n.${componentName} {\n\n}\n`;
+  const scss = `@import "../../styles/theme";\n\n.${componentName} {\n\n}\n`;
   const storybook = (
     `import React from "react"\n\n` +
     `import ${componentName} from "../components/${componentName}";\n\n` +
