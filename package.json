@@ -21,7 +21,8 @@
     "build-css": "node-sass-chokidar src/ -o src/",
     "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
     "build": "npm-run-all -s build-css build-react",
-    "storybook": "start-storybook -p 9001"
+    "storybook": "start-storybook -p 9001",
+    "generate": "node ./.tools/generateComponent.js"
   },
   "eslintConfig": {
     "extends": [
