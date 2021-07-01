@@ -1,0 +1,15 @@
+@import "../../styles/theme";
+
+.RadioList {
+  font-family: $ss-pro;
+  display: flex;
+  flex-direction: column;
+}
+
+.RadioItem {
+  margin: 0.5rem;
+}
+
+.horizontal {
+  flex-direction: row;
+}
