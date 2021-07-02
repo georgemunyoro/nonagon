@@ -12,4 +12,9 @@ const Template = (args) => <Divider {...args} />;
 
 export const divider = Template.bind({});
 
-divider.args = {};
+divider.args = {
+  vertical: false,
+  height: "",
+  width: "",
+  margin: "",
+};

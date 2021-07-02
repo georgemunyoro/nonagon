@@ -1,5 +1,9 @@
 @import "../../styles/theme";
 
 .Divider {
+  background: $secondary-blue;
+}
 
+.Divider.vertical {
+  width: 2px;
 }
