@@ -25,23 +25,23 @@
   background: darken($blue, 5);
 }
 
-.large {
+.Button.large {
   padding: 5px 15px;
 }
 
-.medium {
+.Button.medium {
   font-size: 1rem;
   height: 35px;
   padding: 1px 10px;
 }
 
-.small {
+.Button.small {
   font-size: 0.9rem;
   height: 30px;
   padding: 0 7.5px;
 }
 
-.tiny {
+.Button.tiny {
   font-size: 0.8rem;
   height: 25px;
   padding: 0 6px;

@@ -5,11 +5,18 @@ import Switch from "../components/Switch";
 export default {
   title: "Components/Switch",
   component: Switch,
-  argtypes: {},
+  argTypes: {
+    size: {
+      options: ["tiny", "small", "medium", "large"],
+      control: { type: "select" },
+    }
+  },
 };
 
 const Template = (args) => <Switch {...args} />;
 
-export const switch = Template.bind({});
+export const switch_ = Template.bind({});
 
-switch.args = {};
+switch_.args = {
+  size: "medium"
+};
