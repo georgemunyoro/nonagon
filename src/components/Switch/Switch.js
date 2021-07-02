@@ -1,17 +1,24 @@
 import React from "react";
 
+import Container from "../Container";
+
 import "./Switch.css";
 
-const Switch = ({ size, on, onClick }) => {
+const Switch = ({ size, checked, onClick, label }) => {
 
   const onToggle = event => {
     onClick(event.target.checked);
   };
 
-  return <label class={`Switch ${size || "large"}`}>
-    <input onClick={onToggle} className="SwitchInput" type="checkbox" />
-    <span class="Switch-slider Switch-round"></span>
-  </label>
+  return (
+    <Container flex style={{ alignItems: "center" }}>
+      <label class={`Switch ${size || "large"}`}>
+        <input checked={checked} onClick={onToggle} className="SwitchInput" type="checkbox" />
+        <span class="Switch-slider Switch-round"></span>
+      </label>
+      <p style={{ paddingLeft: "10px" }}>{label}</p>
+    </Container>
+  )
 };
 
 export default Switch;
