@@ -3,13 +3,21 @@ import React from "react"
 import TextField from "../components/TextField";
 
 export default {
-  title: "Components/TextField",
+  title: "Components/Textfield",
   component: TextField,
   argtypes: {},
 };
 
 const Template = (args) => <TextField {...args} />;
 
-export const textfield = Template.bind({});
+export const Input = Template.bind({});
+Input.args = {
+  placeholder: "Basic Input",
+  value: "andom",
+  fontSize: "100px"
+};
 
-textfield.args = {};
+export const Textarea = Template.bind({});
+Textarea.args = {
+  variant: "textarea"
+}
