@@ -1,0 +1,42 @@
+@import "../../styles/theme";
+
+.TextField {
+
+}
+
+.TextField > input { 
+  border: none;
+  border: 2.5px solid black;
+  font-size: 1rem;
+  padding: 10px;
+  outline: none;
+  background: $white;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.TextField > input:hover {
+  background: $gray;
+}
+
+.TextField > input:focus {
+  background-color: #efefef;
+}
+
+.TextField > textarea {
+  border: 2.5px solid black;
+  font-size: 1rem;
+  padding: 10px;
+  outline: none;
+  border-radius: 10px;
+  transition-duration: 0.5s;
+  font-family: $ss-pro;
+}
+
+.TextField > textarea:hover {
+  background: $gray;
+}
+
+.TextField > textarea:focus {
+  background-color: #efefef;
+}
