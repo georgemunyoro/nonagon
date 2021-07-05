@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 
 import TextField from "../components/TextField";
 
@@ -14,10 +14,10 @@ export const Input = Template.bind({});
 Input.args = {
   placeholder: "Basic Input",
   value: "andom",
-  fontSize: "100px"
+  fontSize: "100px",
 };
 
 export const Textarea = Template.bind({});
 Textarea.args = {
-  variant: "textarea"
-}
+  variant: "textarea",
+};
