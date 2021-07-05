@@ -3,7 +3,7 @@ import React from "react";
 import "./TextField.css";
 
 const TextField = ({ placeholder, variant = "input", fontSize, spellCheck, color, background, value = "", onChange }) => {
-  const [text, setText] = value;
+  const [text, setText] = React.useState(value);
 
   const style = {
     fontSize,
