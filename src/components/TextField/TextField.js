@@ -1,8 +1,17 @@
-import React from "react";
-
 import "./TextField.css";
 
-const TextField = ({ placeholder, variant = "input", fontSize, spellCheck, color, background, value = "", onChange }) => {
+import React from "react";
+
+const TextField = ({
+  placeholder,
+  variant = "input",
+  fontSize,
+  spellCheck,
+  color,
+  background,
+  value = "",
+  onChange
+}) => {
   const [text, setText] = React.useState(value);
 
   const style = {
