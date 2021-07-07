@@ -1,9 +1,9 @@
 import "./RadioList.css";
 
 import React from "react";
-import { v4 as uuidv4 } from "uuid";
+import {v4 as uuidv4} from "uuid";
 
-const RadioList = ({ data, onSelect, horizontal }) => {
+const RadioList = ({data, onSelect, horizontal}) => {
   const name = uuidv4();
 
   return (

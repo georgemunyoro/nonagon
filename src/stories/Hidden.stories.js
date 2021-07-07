@@ -8,7 +8,8 @@ export default {
   argtypes: {},
 };
 
-const Template = (args) => <Hidden {...args} />;
+const Template = (args) => < Hidden { ...args }
+/>;
 
 export const hidden = Template.bind({});
 

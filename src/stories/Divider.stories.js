@@ -8,7 +8,8 @@ export default {
   argtypes: {},
 };
 
-const Template = (args) => <Divider {...args} />;
+const Template = (args) => < Divider { ...args }
+/>;
 
 export const divider = Template.bind({});
 
