@@ -8,8 +8,7 @@ export default {
   argtypes: {},
 };
 
-const Template = (args) => < Link { ...args }
-/>;
+const Template = (args) => <Link {...args} />;
 
 export const link = Template.bind({});
 

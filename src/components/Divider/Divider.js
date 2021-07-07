@@ -2,7 +2,7 @@ import "./Divider.css";
 
 import React from "react";
 
-const Divider = ({color, vertical, height, width, margin}) => {
+const Divider = ({ color, vertical, height, width, margin }) => {
   if (vertical) {
     return (
       <div

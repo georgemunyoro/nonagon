@@ -9,8 +9,7 @@ export default {
   argtypes: {},
 };
 
-const Template = (args) => < ButtonGroup { ...args }
-/>;
+const Template = (args) => <ButtonGroup {...args} />;
 
 export const Horizontal = Template.bind({});
 export const Vertical = Template.bind({});
