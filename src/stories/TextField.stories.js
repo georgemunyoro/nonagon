@@ -8,8 +8,7 @@ export default {
   argtypes: {},
 };
 
-const Template = (args) => < TextField { ...args }
-/>;
+const Template = (args) => <TextField {...args} />;
 
 export const Input = Template.bind({});
 Input.args = {
