@@ -8,8 +8,7 @@ export default {
   argtypes: {},
 };
 
-const Template = (args) => < Drawer { ...args }
-/>;
+const Template = (args) => <Drawer {...args} />;
 
 export const drawer = Template.bind({});
 

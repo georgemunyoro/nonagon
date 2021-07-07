@@ -14,7 +14,9 @@ const Drawer = ({
   size = "20%",
   backgroundColor,
 }) => {
-  const onCloseHandler = () => { onClose(); };
+  const onCloseHandler = () => {
+    onClose();
+  };
 
   let style = {
     backgroundColor,
