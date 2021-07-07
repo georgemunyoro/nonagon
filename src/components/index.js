@@ -12,6 +12,7 @@ import RadioList from "./RadioList";
 import Switch from "./Switch";
 import Text from "./Text";
 import TextField from "./TextField";
+import ClickawayListener from "./ClickawayListener";
 
 export {
   Button,
@@ -28,4 +29,5 @@ export {
   Switch,
   Text,
   TextField,
+  ClickawayListener,
 };
