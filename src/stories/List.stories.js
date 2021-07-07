@@ -9,7 +9,8 @@ export default {
   argtypes: {},
 };
 
-const Template = (args) => <List {...args} />;
+const Template = (args) => < List { ...args }
+/>;
 
 export const list = Template.bind({});
 

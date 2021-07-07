@@ -6,16 +6,17 @@ export default {
   component: Box,
   argTypes: {
     color: {
-      options: ["primary", "emerald", "red", "yellow", "orange"],
-      control: { type: "select" },
+      options: [ "primary", "emerald", "red", "yellow", "orange" ],
+      control: {type: "select"},
     },
     elevated: {
-      control: { type: "boolean" },
+      control: {type: "boolean"},
     },
   },
 };
 
-const Template = (args) => <Box {...args} />;
+const Template = (args) => < Box { ...args }
+/>;
 
 export const box = Template.bind({});
 
