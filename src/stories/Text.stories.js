@@ -7,40 +7,41 @@ export default {
   component: Text,
   argTypes: {
     type: {
-      options: ["h1", "h2", "h3", "h4", "h5", "h6", "p"],
-      control: { type: "select" },
+      options: [ "h1", "h2", "h3", "h4", "h5", "h6", "p" ],
+      control: {type: "select"},
       description: "Text tag type to use",
     },
     weight: {
-      control: { type: "number" },
+      control: {type: "number"},
       description: "Font Weight",
     },
     size: {
-      control: { type: "number" },
+      control: {type: "number"},
       description: "Font Size",
     },
     align: {
-      options: ["left", "center", "right", "justify"],
-      control: { type: "radio" },
+      options: [ "left", "center", "right", "justify" ],
+      control: {type: "radio"},
       description: "Text Alignment",
     },
     color: {
-      control: { type: "color" },
+      control: {type: "color"},
       description: "Text Color",
     },
     display: {
-      options: ["block", "inline"],
-      control: { type: "radio" },
+      options: [ "block", "inline" ],
+      control: {type: "radio"},
       description: "CSS Display Property",
     },
     children: {
-      control: { type: "text" },
+      control: {type: "text"},
       description: "Text",
     },
   },
 };
 
-const Template = (args) => <Text {...args} />;
+const Template = (args) => < Text { ...args }
+/>;
 
 export const text = Template.bind({});
 
