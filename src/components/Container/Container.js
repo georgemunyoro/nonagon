@@ -1,8 +1,8 @@
-import React from "react";
-
 import "./Container.css";
 
-const Container = ({ children, style, flex, classes = [] }) => {
+import React from "react";
+
+const Container = ({children, style, flex, classes = []}) => {
   return (
     <div
       style={style}

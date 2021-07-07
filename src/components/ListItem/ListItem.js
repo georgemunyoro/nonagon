@@ -1,8 +1,8 @@
+import "./ListItem.css";
+
 import React from "react";
 
 import Button from "../Button";
-
-import "./ListItem.css";
 
 const ListItem = ({
   alignItems,

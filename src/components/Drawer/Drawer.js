@@ -1,8 +1,9 @@
 import "./Drawer.css";
 
 import React from "react";
-import Container from "../Container";
+
 import ClickawayListener from "../ClickawayListener";
+import Container from "../Container";
 import Hidden from "../Hidden";
 
 const Drawer = ({
@@ -13,9 +14,7 @@ const Drawer = ({
   size = "20%",
   backgroundColor,
 }) => {
-  const onCloseHandler = () => {
-    onClose();
-  };
+  const onCloseHandler = () => { onClose(); };
 
   let style = {
     backgroundColor,
