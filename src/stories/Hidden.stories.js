@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 
 import Hidden from "../components/Hidden";
 
@@ -14,5 +14,5 @@ export const hidden = Template.bind({});
 
 hidden.args = {
   children: [<p>This text can be hidden</p>],
-  hidden: true
+  hidden: true,
 };

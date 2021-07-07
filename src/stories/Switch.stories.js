@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 
 import Switch from "../components/Switch";
 
@@ -12,7 +12,7 @@ export default {
     },
     label: {
       control: { type: "text" },
-    }
+    },
   },
 };
 

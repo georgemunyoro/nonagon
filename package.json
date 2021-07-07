@@ -45,6 +45,7 @@
   },
   "devDependencies": {
     "@storybook/addon-controls": "^6.3.2",
-    "@storybook/react": "^6.3.2"
+    "@storybook/react": "^6.3.2",
+    "prettier": "2.3.2"
   }
 }

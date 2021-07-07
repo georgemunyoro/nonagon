@@ -6,10 +6,10 @@ export default {
   component: Checkbox,
   argTypes: {
     checked: {
-      type: "boolean"
-    }
-  }
-}
+      type: "boolean",
+    },
+  },
+};
 
 const Template = (args) => <Checkbox {...args} />;
 
