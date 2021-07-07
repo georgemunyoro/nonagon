@@ -1,7 +1,7 @@
 @import "../../styles/theme";
 
 .Drawer {
-  position: absolute;
+  position: fixed;
   background: white;
   transition: 0.5s;
   padding: 0;
@@ -28,26 +28,30 @@
   width: 20%;
   height: 100%;
   left: -100%;
-  border-right: 2.5px solid black;
+  top: 0;
+  box-shadow: 2px 0px 2px 0.1px rgba(0, 0, 0, 0.2);
 }
 
 .Drawer.top {
   height: 20%;
   width: 100%;
   top: -100%;
-  border-bottom: 2.5px solid black;
+  left: 0;
+  box-shadow: 0px 2px 2px 0.1px rgba(0, 0, 0, 0.2);
 }
 
 .Drawer.right {
   height: 100%;
   width: 20%;
   right: -100%;
-  border-left: 2.5px solid black;
+  top: 0;
+  box-shadow: -2px 0px 2px 0.1px rgba(0, 0, 0, 0.2);
 }
 
 .Drawer.bottom {
+  left: 0;
   height: 20%;
   width: 100%;
   bottom: -100%;
-  border-top: 2.5px solid black;
+  box-shadow: 0px -2px 2px 0.1px rgba(0, 0, 0, 0.2);
 }
