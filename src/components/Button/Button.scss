@@ -52,11 +52,21 @@
   color: $color-text;
 }
 
-.primary {background: $blue;}
-.emerald {background: $green;}
-.orange {background: $orange;}
-.yellow {background: $yellow;}
-.red {background: $red;}
+.primary {
+  background: $blue;
+}
+.emerald {
+  background: $green;
+}
+.orange {
+  background: $orange;
+}
+.yellow {
+  background: $yellow;
+}
+.red {
+  background: $red;
+}
 
 .elevated {
   box-shadow: 0px 2px 2px 0.1px rgba(0, 0, 0, 0.2);

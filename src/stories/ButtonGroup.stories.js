@@ -1,7 +1,7 @@
-import React from "react"
+import React from "react";
 
-import ButtonGroup from "../components/ButtonGroup";
 import Button from "../components/Button";
+import ButtonGroup from "../components/ButtonGroup";
 
 export default {
   title: "Components/Buttongroup",
@@ -9,7 +9,7 @@ export default {
   argtypes: {},
 };
 
-const Template = (args) => <ButtonGroup {...args}/>;
+const Template = (args) => <ButtonGroup {...args} />;
 
 export const Horizontal = Template.bind({});
 export const Vertical = Template.bind({});
@@ -19,7 +19,7 @@ Horizontal.args = {
     <Button label="Button 1" />,
     <Button label="Button 2" />,
     <Button label="Button 3" />,
-  ]
+  ],
 };
 
 Vertical.args = {
@@ -28,5 +28,5 @@ Vertical.args = {
     <Button label="Button 1" />,
     <Button label="Button 2" />,
     <Button label="Button 3" />,
-  ]
+  ],
 };
