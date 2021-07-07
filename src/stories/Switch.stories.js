@@ -7,17 +7,16 @@ export default {
   component: Switch,
   argTypes: {
     size: {
-      options: [ "tiny", "small", "medium", "large" ],
-      control: {type: "select"},
+      options: ["tiny", "small", "medium", "large"],
+      control: { type: "select" },
     },
     label: {
-      control: {type: "text"},
+      control: { type: "text" },
     },
   },
 };
 
-const Template = (args) => < Switch { ...args }
-/>;
+const Template = (args) => <Switch {...args} />;
 
 export const switch_ = Template.bind({});
 

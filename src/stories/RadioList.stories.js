@@ -8,8 +8,7 @@ export default {
   argtypes: {},
 };
 
-const Template = (args) => < RadioList { ...args }
-/>;
+const Template = (args) => <RadioList {...args} />;
 
 export const radiolist = Template.bind({});
 

@@ -2,7 +2,7 @@ import "./Button.css";
 
 import React from "react";
 
-const Button = ({label, active, fill, size, color, elevated, onClick}) => {
+const Button = ({ label, active, fill, size, color, elevated, onClick }) => {
   return (
     <button
       onClick={onClick}
