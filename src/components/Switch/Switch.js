@@ -10,7 +10,12 @@ const Switch = ({ size, checked, onClick, label }) => {
   };
 
   return (
-    <Container flex style={{ alignItems: "center" }}>
+    <Container
+      flex
+      style={{
+        alignItems: "center",
+      }}
+    >
       <label class={`Switch ${size || "large"}`}>
         <input
           checked={checked}
