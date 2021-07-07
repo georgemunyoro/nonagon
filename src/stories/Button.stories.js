@@ -7,19 +7,19 @@ export default {
   argTypes: {
     size: {
       options: ["large", "medium", "small", "tiny"],
-      control: { type: "radio" }
+      control: { type: "radio" },
     },
     color: {
       options: ["primary", "emerald", "red", "yellow", "orange"],
-      control: { type: "select" }
+      control: { type: "select" },
     },
     elevated: {
-      control: {type: "boolean"}
-    }
-  }
+      control: { type: "boolean" },
+    },
+  },
 };
 
-const Template = (args) => <Button {...args} />
+const Template = (args) => <Button {...args} />;
 
 export const Large = Template.bind({});
 export const Medium = Template.bind({});
@@ -31,25 +31,25 @@ Large.args = {
   size: "large",
   color: "primary",
   elevated: false,
-}
+};
 
 Medium.args = {
   label: "Button",
   size: "medium",
   color: "primary",
   elevated: false,
-}
+};
 
 Small.args = {
   label: "Button",
   size: "small",
   color: "primary",
   elevated: false,
-}
+};
 
 Tiny.args = {
   label: "Button",
   size: "tiny",
   color: "primary",
   elevated: false,
-}
+};

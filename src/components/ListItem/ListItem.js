@@ -1,11 +1,28 @@
+import "./ListItem.css";
+
 import React from "react";
 
 import Button from "../Button";
 
-import "./ListItem.css";
-
-const ListItem = ({ alignItems, autoFocus, button, label, children, secondaryText, leftIcon, rightIcon, dense, disabled, divider }) => {
-  if (button) return <div className="ListItemButton"><Button label={buttonLabel} /></div>
+const ListItem = ({
+  alignItems,
+  autoFocus,
+  button,
+  label,
+  children,
+  secondaryText,
+  leftIcon,
+  rightIcon,
+  dense,
+  disabled,
+  divider,
+}) => {
+  if (button)
+    return (
+      <div className="ListItemButton">
+        <Button label={buttonLabel} />
+      </div>
+    );
   return (
     <li className="ListItem">
       <div className="ListItemLeftIcon">{leftIcon}</div>
@@ -14,7 +31,7 @@ const ListItem = ({ alignItems, autoFocus, button, label, children, secondaryTex
       <div className="ListItemRightIcon">{rightIcon}</div>
       {children}
     </li>
-  )
+  );
 };
 
 export default ListItem;
