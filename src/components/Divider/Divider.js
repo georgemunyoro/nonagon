@@ -1,6 +1,6 @@
-import React from "react";
-
 import "./Divider.css";
+
+import React from "react";
 
 const Divider = ({ color, vertical, height, width, margin }) => {
   if (vertical) {
@@ -11,8 +11,9 @@ const Divider = ({ color, vertical, height, width, margin }) => {
           height,
           color,
           margin,
-        }} />
-    )
+        }}
+      />
+    );
   }
 
   return (
@@ -22,8 +23,9 @@ const Divider = ({ color, vertical, height, width, margin }) => {
         color,
         margin,
       }}
-      className="Divider" />
-  )
+      className="Divider"
+    />
+  );
 };
 
 export default Divider;

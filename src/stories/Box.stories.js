@@ -7,20 +7,26 @@ export default {
   argTypes: {
     color: {
       options: ["primary", "emerald", "red", "yellow", "orange"],
-      control: { type: "select" }
+      control: { type: "select" },
     },
     elevated: {
-      control: { type: "boolean" }
-    }
-  }
+      control: { type: "boolean" },
+    },
+  },
 };
 
-const Template = (args) => <Box {...args} />
+const Template = (args) => <Box {...args} />;
 
 export const box = Template.bind({});
 
 box.args = {
   color: "primary",
   elevated: false,
-  children: [<p>Ex aliqua nulla deserunt in elit Lorem nisi velit exercitation consequat eiusmod anim. Mollit ipsum id do proident. Voluptate cupidatat minim exercitation nulla veniam mollit quis ut reprehenderit eu.</p>]
-}
+  children: [
+    <p>
+      Ex aliqua nulla deserunt in elit Lorem nisi velit exercitation consequat
+      eiusmod anim. Mollit ipsum id do proident. Voluptate cupidatat minim
+      exercitation nulla veniam mollit quis ut reprehenderit eu.
+    </p>,
+  ],
+};
