@@ -15,4 +15,5 @@ export const drawer = Template.bind({});
 drawer.args = {
   isOpen: false,
   position: "top",
+  size: "50px",
 };
