@@ -11,6 +11,10 @@ const TextField = ({
   background,
   value = "",
   onChange,
+  width,
+  padding,
+  margin,
+  height,
 }) => {
   const [text, setText] = React.useState(value);
 
@@ -18,6 +22,10 @@ const TextField = ({
     fontSize,
     color,
     background,
+    width,
+    padding,
+    margin,
+    height,
   };
 
   const onValueChange = (e) => {
