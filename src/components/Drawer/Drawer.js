@@ -1,8 +1,9 @@
 import "./Drawer.css";
 
 import React from "react";
-import Container from "../Container";
+
 import ClickawayListener from "../ClickawayListener";
+import Container from "../Container";
 import Hidden from "../Hidden";
 
 const Drawer = ({

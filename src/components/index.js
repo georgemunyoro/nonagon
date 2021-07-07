@@ -1,7 +1,8 @@
-import Button from "./Button";
 import Box from "./Box";
+import Button from "./Button";
 import ButtonGroup from "./ButtonGroup";
 import Checkbox from "./Checkbox";
+import ClickawayListener from "./ClickawayListener";
 import Container from "./Container";
 import Divider from "./Divider";
 import Drawer from "./Drawer";
@@ -12,13 +13,13 @@ import RadioList from "./RadioList";
 import Switch from "./Switch";
 import Text from "./Text";
 import TextField from "./TextField";
-import ClickawayListener from "./ClickawayListener";
 
 export {
-  Button,
   Box,
+  Button,
   ButtonGroup,
   Checkbox,
+  ClickawayListener,
   Container,
   Divider,
   Drawer,
@@ -29,5 +30,4 @@ export {
   Switch,
   Text,
   TextField,
-  ClickawayListener,
 };

@@ -1,1 +1,1 @@
-export {default} from "./ClickawayListener";
+export { default } from "./ClickawayListener";

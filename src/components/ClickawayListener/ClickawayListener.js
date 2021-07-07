@@ -1,7 +1,7 @@
+import "./ClickawayListener.css";
+
 import React from "react";
 import { v4 as uuidv4 } from "uuid";
-
-import "./ClickawayListener.css";
 
 const ClickawayListener = ({ children, onClickAway }) => {
   const id = uuidv4();
