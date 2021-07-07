@@ -2,9 +2,12 @@ import "./Container.css";
 
 import React from "react";
 
-const Container = ({ children, style, flex }) => {
+const Container = ({ children, style, flex, classes = [] }) => {
   return (
-    <div style={style} className={`Container ${flex && "flex"}`}>
+    <div
+      style={style}
+      className={`Container ${flex && "flex"} ${classes.join("")}`}
+    >
       {children}
     </div>
   );
