@@ -13,6 +13,7 @@ import RadioList from "./RadioList";
 import Switch from "./Switch";
 import Text from "./Text";
 import TextField from "./TextField";
+import Backdrop from "./Backdrop";
 
 export {
   Box,
@@ -30,4 +31,5 @@ export {
   Switch,
   Text,
   TextField,
+  Backdrop,
 };
