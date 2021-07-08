@@ -14,6 +14,7 @@ import Switch from "./Switch";
 import Text from "./Text";
 import TextField from "./TextField";
 import Backdrop from "./Backdrop";
+import Dialog from "./Dialog";
 
 export {
   Box,
@@ -32,4 +33,5 @@ export {
   Text,
   TextField,
   Backdrop,
+  Dialog,
 };
