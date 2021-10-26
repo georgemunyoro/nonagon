@@ -1,7 +1,12 @@
 {
-  "name": "nucleus",
+  "name": "nonagon",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "babel": {
+    "presets": [
+      "@babel/preset-react"
+    ]
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
@@ -23,7 +28,8 @@
     "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
     "build": "npm-run-all -s build-css build-react",
     "storybook": "start-storybook -p 9001 -c .storybook",
-    "generate": "node ./.tools/generateComponent.js"
+    "generate": "node ./.tools/generateComponent.js",
+    "publish:npm": "rm -rf dist && mkdir dist &&  babel src/components/ -d dist --copy-files"
   },
   "eslintConfig": {
     "extends": [
@@ -44,6 +50,8 @@
     ]
   },
   "devDependencies": {
+    "@babel/cli": "^7.15.7",
+    "@babel/preset-react": "^7.14.5",
     "@storybook/addon-controls": "^6.3.2",
     "@storybook/react": "^6.3.2",
     "prettier": "2.3.2"
