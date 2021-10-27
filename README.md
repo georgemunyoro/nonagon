@@ -1,11 +1,7 @@
-
-
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
-[![CalVer](https://img.shields.io/badge/calver-0Y.MM.MICRO-22bfda.svg)](https://img.shields.io/badge/calver-0Y.MM.MICRO-22bfda.svg)
 [![MIT License][license-shield]][license-url]
-
 
 <!-- PROJECT LOGO -->
 <br />
@@ -28,81 +24,89 @@
   </p>
 </p>
 
-
-
 <!-- TABLE OF CONTENTS -->
+
 ## Table of Contents
 
-* [About the Project](#about-the-project)
-  * [Built With](#built-with)
-* [Getting Started](#getting-started)
-  * [Prerequisites](#prerequisites)
-  * [Installation](#installation)
-* [Usage](#usage)
-* [Roadmap](#roadmap)
-* [Contributing](#contributing)
-* [License](#license)
-* [Contact](#contact)
-* [Acknowledgements](#acknowledgements)
+- [About the Project](#about-the-project)
+  - [Built With](#built-with)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Usage](#usage)
+- [Roadmap](#roadmap)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+- [Acknowledgements](#acknowledgements)
 
 ### Built With
+
 This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-* [NodeJS](https://nodejs.org/en/)
-* [React](https://reactjs.org/)
+
+- [NodeJS](https://nodejs.org/en/)
+- [React](https://reactjs.org/)
 
 <!-- GETTING STARTED -->
+
 ## Getting Started
 
 You only need one step to get started:
+
 1. Install nonagon
-	```sh
-	$ npm -i nonagon
-	```
-	or
-	```sh
-	$ yarn add nonagon
-	```
+   ```sh
+   $ npm -i nonagon
+   ```
+   or
+   ```sh
+   $ yarn add nonagon
+   ```
 
 ### Prerequisites
+
 The application requires the following to be installed on your system in order to run:
- - NodeJS v14.15.0
- - npm 6.14.8
+
+- NodeJS v14.15.0
+- npm 6.14.8
 
 <!-- ROADMAP -->
+
 ## Roadmap
 
 See the [open issues](https://github.com/georgemunyoro/nonagon/issues) for a list of proposed features (and known issues).
 
-
 <!-- CONTRIBUTING -->
+
 ## Contributing
 
 Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
 ##### NB: if you intend to add a feature or make changes that will go into the final product, you must create an issue on the [project board](), and comply to the contributing guidelines, if you are just messing around, or would like to build your own project on top of Pydgon, feel free to do as you please.
+
 1. Fork the Project
 2. Create your Branch
-	```sh
-	$ git checkout -b branchName
-	```
+   ```sh
+   $ git checkout -b branchName
+   ```
 3. Make your changes
 4. Commit your Changes
-	```sh
-	$ git commit -m "Add some amazing feature or changes"
-	```
+   ```sh
+   $ git commit -m "Add some amazing feature or changes"
+   ```
 5. Push to the Branch
-	```sh
-	$ git push origin branchName
-	```
-7. Open a Pull Request
+   ```sh
+   $ git push origin branchName
+   ```
+6. Open a Pull Request
 
 <!-- LICENSE -->
+
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
-
 <!-- CONTACT -->
+
 ## Contact
 
 George Munyoro - [@george_munyoro](https://twitter.com/george_munyoro)
@@ -111,6 +115,7 @@ Project Link: [https://github.com/georgemunyoro/nonagon](https://github.com/geor
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
 [contributors-shield]: https://img.shields.io/github/contributors/georgemunyoro/nonagon.svg
 [contributors-url]: https://github.com/georgemunyoro/nonagon/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/georgemunyoro/nonagon.svg
@@ -121,4 +126,3 @@ Project Link: [https://github.com/georgemunyoro/nonagon](https://github.com/geor
 [license-url]: https://github.com/georgemunyoro/nonagon/blob/master/LICENSE.txt
 [license-shield]: https://img.shields.io/github/license/georgemunyoro/nonagon.svg
 [linkedin-url]: https://linkedin.com/in/georgemunyoro
-
