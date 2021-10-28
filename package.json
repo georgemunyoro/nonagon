@@ -30,7 +30,8 @@
     "storybook": "start-storybook -p 9001 -c .storybook",
     "generate": "node ./.tools/generateComponent.js",
     "publish:npm": "rm -rf dist && mkdir dist &&  babel src/components/ -d dist --copy-files",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "commit": "git cz"
   },
   "eslintConfig": {
     "extends": [
@@ -55,11 +56,17 @@
     "@babel/preset-react": "^7.14.5",
     "@storybook/addon-controls": "^6.3.2",
     "@storybook/react": "^6.3.2",
+    "cz-conventional-changelog": "^3.3.0",
     "prettier": "2.3.2",
     "semantic-release": "^18.0.0"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/georgemunyoro/nonagon.git"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
