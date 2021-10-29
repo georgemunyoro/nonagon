@@ -7,7 +7,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/georgemunyoro/nonagon">
-    <img src="https://i.ibb.co/vD3vQhc/trans-Light-Closeupblock-logo.png" alt="Nonagon Logo" height="100">
+    <img src="https://i.ibb.co/Z6nVNwJ/github-logo.png" alt="Nonagon Logo" height="120">
   </a>
 
   <h3 align="center">Nonagon</h3>
