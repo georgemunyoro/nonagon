@@ -13,7 +13,7 @@
   <h3 align="center">Nonagon</h3>
 
   <p align="center">
-    Build beautiful React apps super fast. Nonagon is a component library for building beautiful, fast, and more accessible React applications.
+    Build beautiful React apps super fast. Nonagon is a component library for building beautiful, fast, and more accessible React applications`.
     <br />
     <a href="https://npmjs.com/package/nonagon"><strong>Check it out »</strong></a>
     <br />
@@ -25,7 +25,6 @@
 </p>
 
 <!-- TABLE OF CONTENTS -->
-
 ## Table of Contents
 
 - [About the Project](#about-the-project)
@@ -48,7 +47,6 @@ This section should list any major frameworks that you built your project using.
 - [React](https://reactjs.org/)
 
 <!-- GETTING STARTED -->
-
 ## Getting Started
 
 You only need one step to get started:
@@ -70,18 +68,16 @@ The application requires the following to be installed on your system in order t
 - npm 6.14.8
 
 <!-- ROADMAP -->
-
 ## Roadmap
 
 See the [open issues](https://github.com/georgemunyoro/nonagon/issues) for a list of proposed features (and known issues).
 
 <!-- CONTRIBUTING -->
-
 ## Contributing
 
 Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-##### NB: if you intend to add a feature or make changes that will go into the final product, you must create an issue on the [project board](), and comply to the contributing guidelines, if you are just messing around, or would like to build your own project on top of Pydgon, feel free to do as you please.
+##### NB: if you intend to add a feature or make changes that will go into the final product, you must create an issue on the [project board](https://github.com/georgemunyoro/nonagon/issues), and comply to the contributing guidelines, if you are just messing around, or would like to build your own project on top of Nonagon, feel free to do as you please, as long as you're not violating the license agreement.
 
 1. Fork the Project
 2. Create your Branch
@@ -110,7 +106,6 @@ Distributed under the MIT License. See `LICENSE` for more information.
 ## Contact
 
 George Munyoro - [@george_munyoro](https://twitter.com/george_munyoro)
-
 Project Link: [https://github.com/georgemunyoro/nonagon](https://github.com/georgemunyoro/nonagon)
 
 <!-- MARKDOWN LINKS & IMAGES -->

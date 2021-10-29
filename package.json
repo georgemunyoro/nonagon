@@ -31,7 +31,7 @@
     "generate": "node ./.tools/generateComponent.js",
     "publish:npm": "rm -rf dist && mkdir dist &&  babel src/components/ -d dist --copy-files",
     "semantic-release": "semantic-release",
-    "commit": "git cz"
+    "commit": "cz"
   },
   "eslintConfig": {
     "extends": [
