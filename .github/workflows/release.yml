@@ -16,7 +16,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [12.x, 14.x, 16.x]
+        node-version: [12.x, 13.x, 14.x]
         os: [ubuntu-latest, windows-latest, macos-latest]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
@@ -31,18 +31,19 @@ jobs:
     - run: npm run build --if-present
     - run: npm test
   
-  publish:
+  release:
+    name: Release
     runs-on: ubuntu-latest
     if: ${{ github.ref == 'refs/heads/master' }}
     needs: [quality]
     steps:
     - uses: actions/checkout@v2
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v2
+    - uses: actions/setup-node@v1
       with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'npm'
+        node-version: "12.x"
     - run: npm ci
-    - run: npm run semantic-release
-    
-
+    - run: npm test
+    - run: npx semantic-release
+      env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
