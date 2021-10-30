@@ -1,9 +1,9 @@
-import "./ClickawayListener.css";
+import "./Backdrop.css";
 
 import React from "react";
 import { v4 as uuidv4 } from "uuid";
 
-const ClickawayListener = ({ children, onClickAway, backgroundColor }) => {
+const Backdrop = ({ children, onClickAway, backgroundColor="rgba(1,1,1,0.5)" }) => {
   const id = uuidv4();
 
   const onClickHandler = (event) => {
@@ -14,13 +14,13 @@ const ClickawayListener = ({ children, onClickAway, backgroundColor }) => {
 
   const style = {
     backgroundColor,
-  }
+  };
 
   return (
-    <div style={style} className={`${id} ClickawayListener`} onClick={onClickHandler}>
+    <div style={style} className={`${id} Backdrop`} onClick={onClickHandler}>
       {children}
     </div>
   );
 };
 
-export default ClickawayListener;
+export default Backdrop;
