@@ -96,13 +96,11 @@ Contributions are what make the open source community such an amazing place to b
 6. Open a Pull Request
 
 <!-- LICENSE -->
-
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
 <!-- CONTACT -->
-
 ## Contact
 
 George Munyoro - [@george_munyoro](https://twitter.com/george_munyoro)
