@@ -10,6 +10,7 @@
 
 # production
 /build
+/dist
 
 # misc
 .DS_Store
@@ -26,3 +27,4 @@ src/**/*.css
 
 # editors
 .vscode
+tags
