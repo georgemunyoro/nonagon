@@ -30,7 +30,7 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     - run: npm test
-  
+
   release:
     name: Release
     runs-on: ubuntu-latest
@@ -43,7 +43,10 @@ jobs:
         node-version: "14.x"
     - run: npm ci
     - run: npm test
-    - run: npx semantic-release
+    - run: npm run build
+    - run: cp package.json dist/
+    - run: cp README.md dist/
+    - run: cd dist && npx semantic-release
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
