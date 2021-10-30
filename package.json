@@ -16,11 +16,11 @@
     "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
     "storybook": "start-storybook -p 9001 -c .storybook",
     "generate": "node ./.tools/generateComponent.js",
-    "publish:npm": "rm -rf dist && mkdir dist &&  babel src/components/ -d dist --copy-files",
     "semantic-release": "semantic-release",
     "commit": "cz",
-    "build": "npm run build-css && rollup -c",
-    "test": "jest"
+    "build": "rm -rf dist && npm run build-css && rollup -c && cp package.json dist/ && cp README.md dist/",
+    "test": "jest",
+    "publish:npm": "npm run build && cd dist/ && npm publish"
   },
   "eslintConfig": {
     "extends": [
