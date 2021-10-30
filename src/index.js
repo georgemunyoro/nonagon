@@ -1,19 +1,33 @@
-import "./index.css";
+import Box from "./components/Box";
+import Button from "./components/Button";
+import ButtonGroup from "./components/ButtonGroup";
+import Checkbox from "./components/Checkbox";
+import ClickawayListener from "./components/ClickawayListener";
+import Container from "./components/Container";
+import Divider from "./components/Divider";
+import Drawer from "./components/Drawer";
+import Hidden from "./components/Hidden";
+import List from "./components/List";
+import ListItem from "./components/ListItem";
+import RadioList from "./components/RadioList";
+import Switch from "./components/Switch";
+import Text from "./components/Text";
+import TextField from "./components/TextField";
 
-import React from "react";
-import ReactDOM from "react-dom";
-
-import App from "./App";
-import reportWebVitals from "./reportWebVitals";
-
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById("root")
-);
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+export {
+  Box,
+  Button,
+  ButtonGroup,
+  Checkbox,
+  ClickawayListener,
+  Container,
+  Divider,
+  Drawer,
+  Hidden,
+  List,
+  ListItem,
+  RadioList,
+  Switch,
+  Text,
+  TextField,
+};
