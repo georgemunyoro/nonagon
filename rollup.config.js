@@ -3,6 +3,8 @@ import resolve from "@rollup/plugin-node-resolve";
 import external from "rollup-plugin-peer-deps-external";
 import { terser } from "rollup-plugin-terser";
 import postcss from "rollup-plugin-postcss";
+import commonjs from "@rollup/plugin-commonjs";
+import React from "react";
 
 export default [
   {
@@ -26,6 +28,9 @@ export default [
       babel({
         exclude: "node_modules/**",
         presets: ["@babel/preset-react"],
+      }),
+      commonjs({
+        include: /node_modules/,
       }),
       external(),
       resolve(),
