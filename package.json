@@ -1,18 +1,10 @@
 {
   "name": "nonagon",
-  "version": "0.0.0-development",
-  "private": false,
-  "dependencies": {
-    "@storybook/addon-docs": "^6.3.8",
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/user-event": "^12.1.10",
-    "node-sass-chokidar": "^1.5.0",
-    "npm-run-all": "^4.1.5",
-    "uuid": "^8.3.2",
-    "web-vitals": "^1.0.1"
-  },
+  "version": "1.0.0",
+  "description": "[![Contributors][contributors-shield]][contributors-url]\r [![Forks][forks-shield]][forks-url]\r [![Stargazers][stars-shield]][stars-url]\r [![MIT License][license-shield]][license-url]",
+  "main": "babel.config.js",
   "scripts": {
-    "build-css": "node-sass-chokidar src/ -o src/",
+    "build-css": "node-sass src/ -o src/",
     "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
     "storybook": "start-storybook -p 9001 -c .storybook",
     "generate": "node ./.tools/generateComponent.js",
@@ -22,63 +14,18 @@
     "test": "jest",
     "publish:npm": "npm run build && cd dist/ && npm publish"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "devDependencies": {
-    "@babel/core": "^7.16.0",
-    "@babel/preset-env": "^7.16.0",
-    "@babel/preset-react": "^7.16.0",
-    "@rollup/plugin-node-resolve": "^13.0.6",
-    "@storybook/addon-controls": "^6.3.2",
-    "@storybook/react": "^6.3.2",
-    "@testing-library/react": "^12.1.2",
-    "babel-jest": "^27.3.1",
-    "babel-loader": "^8.2.3",
-    "babel-plugin-dynamic-import-node": "^2.3.3",
-    "cz-conventional-changelog": "^3.3.0",
-    "jest": "^27.3.1",
-    "postcss": "^8.3.11",
-    "prettier": "2.3.2",
-    "react": "^16.14.0",
-    "react-dom": "^16.14.0",
-    "react-test-renderer": "^17.0.2",
-    "rollup": "^2.58.3",
-    "rollup-plugin-babel": "^4.4.0",
-    "rollup-plugin-peer-deps-external": "^2.2.4",
-    "rollup-plugin-postcss": "^4.0.1",
-    "rollup-plugin-terser": "^7.0.2",
-    "semantic-release": "^18.0.0"
-  },
-  "peerDependencies": {
-    "react": "^16.14.0",
-    "react-dom": "^16.14.0"
-  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/georgemunyoro/nonagon.git"
+    "url": "git+https://github.com/georgemunyoro/nonagon.git"
   },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/georgemunyoro/nonagon/issues"
   },
-  "optionalDependencies": {
-    "fsevents": "^2.3.2"
+  "homepage": "https://github.com/georgemunyoro/nonagon#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1"
   }
 }
