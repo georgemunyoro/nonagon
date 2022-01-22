@@ -16,14 +16,14 @@ const Switch = ({ size, checked, onClick, label }) => {
         alignItems: "center",
       }}
     >
-      <label class={`Switch ${size || "large"}`}>
+      <label className={`Switch ${size || "large"}`}>
         <input
           checked={checked}
           onClick={onToggle}
           className="SwitchInput"
           type="checkbox"
         />{" "}
-        <span class="Switch-slider Switch-round"></span>
+        <span className="Switch-slider Switch-round"></span>
       </label>
       <p
         style={{
