@@ -4,6 +4,8 @@ import React from "react";
 import { v4 as uuidv4 } from "uuid";
 
 const RadioList = ({ data, onSelect, horizontal }) => {
+  if (data == null) return <div></div>;
+
   const name = uuidv4();
 
   return (
