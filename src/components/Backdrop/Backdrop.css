@@ -1,0 +1,33 @@
+*::-webkit-scrollbar {
+  border-radius: 10px;
+  width: 10px; }
+
+*::-webkit-scrollbar-button {
+  border-radius: 10px;
+  display: none; }
+
+*::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 7px; }
+
+*::-webkit-scrollbar-corner {
+  display: none; }
+
+*::-webkit-resizer {
+  background: black;
+  border-radius: 10px 0 8px 0; }
+
+.Backdrop {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.Backdrop > * {
+  z-index: 200; }
