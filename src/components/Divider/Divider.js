@@ -2,7 +2,7 @@ import "./Divider.css";
 
 import React from "react";
 
-const Divider = ({ color, vertical, height, width, margin }) => {
+const Divider = ({ color, vertical, height, width, margin, style }) => {
   if (vertical) {
     return (
       <div
@@ -11,6 +11,7 @@ const Divider = ({ color, vertical, height, width, margin }) => {
           height,
           color,
           margin,
+          ...style,
         }}
       />
     );
@@ -22,6 +23,7 @@ const Divider = ({ color, vertical, height, width, margin }) => {
         width,
         color,
         margin,
+        ...style,
       }}
       className="Divider"
     />

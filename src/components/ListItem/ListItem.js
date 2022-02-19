@@ -1,8 +1,6 @@
-import "./ListItem.css";
-
 import React from "react";
-
 import Button from "../Button";
+import "./ListItem.css";
 
 const ListItem = ({
   alignItems,
@@ -16,6 +14,10 @@ const ListItem = ({
   dense,
   disabled,
   divider,
+  leftIconContainerProps,
+  labelContainerProps,
+  secondaryTextContainerProps,
+  rightIconContainerProps,
 }) => {
   const style = {
     alignItems,
@@ -29,10 +31,18 @@ const ListItem = ({
     );
   return (
     <li className="ListItem" style={style}>
-      <div className="ListItemLeftIcon">{leftIcon}</div>
-      <div className="ListItemLabel">{label}</div>
-      <div className="ListItemSecondaryText">{secondaryText}</div>
-      <div className="ListItemRightIcon">{rightIcon}</div>
+      <div className="ListItemLeftIcon" {...leftIconContainerProps}>
+        {leftIcon}
+      </div>
+      <div className="ListItemLabel" {...labelContainerProps}>
+        {label}
+      </div>
+      <div className="ListItemSecondaryText" {...secondaryTextContainerProps}>
+        {secondaryText}
+      </div>
+      <div className="ListItemRightIcon" {...rightIconContainerProps}>
+        {rightIcon}
+      </div>
       {children}
     </li>
   );

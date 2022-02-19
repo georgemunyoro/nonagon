@@ -1,14 +1,10 @@
+import React from "react";
 import "./Link.css";
 
-import React from "react";
-
-const Link = ({ href, label, color, size }) => {
-  const style = { color, fontSize: size };
-  return (
-    <a className={`Link`} href={href} style={style}>
-      {label}
-    </a>
-  );
-};
+const Link = ({ href, label, color, size: fontSize, style }) => (
+  <a className={`Link`} href={href} style={{ color, fontSize, ...style }}>
+    {label}
+  </a>
+);
 
 export default Link;

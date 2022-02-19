@@ -3,7 +3,12 @@ import "./ClickawayListener.css";
 import React from "react";
 import { v4 as uuidv4 } from "uuid";
 
-const ClickawayListener = ({ children, onClickAway, backgroundColor }) => {
+const ClickawayListener = ({
+  children,
+  onClickAway,
+  backgroundColor,
+  style,
+}) => {
   const id = uuidv4();
 
   const onClickHandler = (event) => {
@@ -12,12 +17,15 @@ const ClickawayListener = ({ children, onClickAway, backgroundColor }) => {
     }
   };
 
-  const style = {
-    backgroundColor,
-  }
-
   return (
-    <div style={style} className={`${id} ClickawayListener`} onClick={onClickHandler}>
+    <div
+      style={{
+        backgroundColor,
+        ...style,
+      }}
+      className={`${id} ClickawayListener`}
+      onClick={onClickHandler}
+    >
       {children}
     </div>
   );

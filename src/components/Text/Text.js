@@ -1,6 +1,5 @@
-import "./Text.css";
-
 import React from "react";
+import "./Text.css";
 
 const Text = ({
   children,
@@ -13,8 +12,9 @@ const Text = ({
   textWrap,
   paragraph,
   classes = [],
+  style,
 }) => {
-  const style = {
+  style = {
     fontWeight: weight,
     fontSize: `${size}px`,
     textAlign: align,
@@ -22,6 +22,7 @@ const Text = ({
     display,
     textWrap,
     marginBottom: paragraph ? "10px" : "",
+    ...style,
   };
 
   classes.push("Text");
