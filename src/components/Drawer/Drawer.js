@@ -13,13 +13,19 @@ const Drawer = ({
   onClose,
   size = "20%",
   backgroundColor,
+  style,
+  hiddenComponentProps,
+  clickawayListenerComponentProps,
+  drawerContentContainerProps,
+  drawerContainerProps,
 }) => {
   const onCloseHandler = () => {
     onClose();
   };
 
-  let style = {
+  style = {
     backgroundColor,
+    ...style,
   };
 
   if (position === "left" || position === "right") {
@@ -29,13 +35,22 @@ const Drawer = ({
   }
 
   return (
-    <Hidden hidden={!isOpen}>
-      <ClickawayListener onClickAway={onCloseHandler}>
+    <Hidden {...hiddenComponentProps} hidden={!isOpen}>
+      <ClickawayListener
+        {...clickawayListenerComponentProps}
+        onClickAway={onCloseHandler}
+      >
         <Container
+          {...drawerContainerProps}
           style={style}
           classes={[`Drawer ${position} ${isOpen && "isOpen"}`]}
         >
-          <Container classes={[`DrawerContainer`]}>{children}</Container>
+          <Container
+            {...drawerContentContainerProps}
+            classes={[`DrawerContainer`]}
+          >
+            {children}
+          </Container>
         </Container>
       </ClickawayListener>
     </Hidden>

@@ -1,8 +1,6 @@
 import React from "react";
-
+import { Backdrop, Box, Container, Hidden } from "../index";
 import "./Dialog.css";
-
-import { Container, Hidden, Backdrop, Box } from "../index";
 
 const Dialog = ({
   isOpen = false,
@@ -10,17 +8,25 @@ const Dialog = ({
   children,
   width = "50%",
   height = "initial",
+  containerComponentProps,
+  hiddenComponentProps,
+  backdropComponentProps,
+  dialogMessageContainerProps,
+  dialogMessageBoxProps,
 }) => {
   return (
-    <Container>
-      <Hidden hidden={!isOpen}>
+    <Container {...containerComponentProps}>
+      <Hidden hidden={!isOpen} {...hiddenComponentProps}>
         <Backdrop
+          {...backdropComponentProps}
           onClickAway={() => {
             onClose();
           }}
         >
-          <Container style={{ width, height }}>
-            <Box elevated>{children}</Box>
+          <Container {...dialogMessageContainerProps} style={{ width, height }}>
+            <Box {...dialogMessageBoxProps} elevated>
+              {children}
+            </Box>
           </Container>
         </Backdrop>
       </Hidden>

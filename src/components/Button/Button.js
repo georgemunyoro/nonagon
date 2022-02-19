@@ -2,7 +2,16 @@ import "./Button.css";
 
 import React from "react";
 
-const Button = ({ label, active, fill, size, color, elevated, onClick }) => {
+const Button = ({
+  label,
+  active,
+  fill,
+  size,
+  color,
+  elevated,
+  onClick,
+  style,
+}) => {
   return (
     <button
       onClick={onClick}
@@ -11,6 +20,7 @@ const Button = ({ label, active, fill, size, color, elevated, onClick }) => {
       } ${color} ${
         active ? (fill ? `active fill` : `active no-fill`) : `disabled`
       }`}
+      style={style}
     >
       {label}
     </button>

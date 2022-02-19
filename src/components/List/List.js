@@ -1,6 +1,5 @@
-import "./List.css";
-
 import React from "react";
+import "./List.css";
 
 const List = ({ children, ordered, plain, dense }) => {
   const classes = `List ${plain && "plain"} ${dense && "dense"}`;
