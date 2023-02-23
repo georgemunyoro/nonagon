@@ -1,0 +1,45 @@
+import React from "react";
+import { v4 as uuidv4 } from "uuid";
+import "./RadioList.css";
+
+interface RadioListProps {
+  data?: { label: string; value: string }[];
+  onSelect?: (value: string) => void;
+  horizontal?: boolean;
+  containerComponentProps?: React.HTMLAttributes<HTMLDivElement>;
+}
+
+const RadioList = ({
+  data,
+  onSelect,
+  horizontal,
+  containerComponentProps,
+}: RadioListProps) => {
+  if (data == null) return <div></div>;
+
+  const name = uuidv4();
+
+  return (
+    <div
+      {...containerComponentProps}
+      className={`RadioList ${horizontal && "horizontal"}`}
+    >
+      {data.map(({ label, value }) => {
+        const id = uuidv4();
+        return (
+          <div>
+            <input
+              onClick={() => onSelect && onSelect(value)}
+              className="RadioItem"
+              type="radio"
+              {...{ id, value, name }}
+            />
+            <label htmlFor={id}>{label}</label>
+          </div>
+        );
+      })}
+    </div>
+  );
+};
+
+export default RadioList;
