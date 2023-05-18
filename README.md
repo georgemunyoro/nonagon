@@ -13,7 +13,7 @@
   <h3 align="center">Nonagon</h3>
 
   <p align="center">
-    Build beautiful React apps super fast. Nonagon is a component library for building beautiful, fast, and more accessible React applications`.
+    Build beautiful React apps super fast. Nonagon is a component library for building beautiful, fast, and more accessible React applications.
     <br />
     <a href="https://npmjs.com/package/nonagon"><strong>Check it out »</strong></a>
     <br />
