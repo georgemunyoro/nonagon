@@ -20,6 +20,7 @@ export default {
           "red-boy": "#F2CACA",
           red: "#DB524E",
           green: "#27AE60",
+          "green-light": "#CBECD9",
           blue: "#428BF9",
         },
       },

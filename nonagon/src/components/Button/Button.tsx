@@ -14,7 +14,7 @@ export const Button = ({
     <button
       {...rest}
       className={clsx(
-        "h-10 flex items-center justify-center gap-2",
+        "h-10 flex items-center justify-center gap-2 outline-none",
         getButtonVariantStyle(variant ?? "primary"),
         {
           "rounded-md": !rest.circle || !!children,
