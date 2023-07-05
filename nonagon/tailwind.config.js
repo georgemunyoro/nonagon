@@ -24,6 +24,18 @@ export default {
           blue: "#428BF9",
         },
       },
+      boxShadow: {
+        browk:
+          "0px 4px 16px 0px rgba(51, 51, 51, 0.08), 0px 4px 4px 0px rgba(51, 51, 51, 0.04)",
+        "browk-input-error":
+          "0px 4px 40px 0px rgba(255, 195, 195, 0.24), 0px 4px 4px 0px rgba(255, 195, 195, 0.04)",
+        "browk-input-success":
+          "0px 4px 40px 0px rgba(39, 174, 96, 0.24), 0px 4px 4px 0px rgba(39, 174, 96, 0.04)",
+        "browk-hover":
+          "0px 4px 56px 0px rgba(51, 51, 51, 0.16), 0px 4px 4px 0px rgba(51, 51, 51, 0.04)",
+        "browk-active":
+          "0px 4px 24px 0px rgba(51, 51, 51, 0.24), 0px 4px 4px 0px rgba(51, 51, 51, 0.04)",
+      },
     },
   },
   plugins: [],

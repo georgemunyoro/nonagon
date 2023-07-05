@@ -30,9 +30,9 @@ export const Input = ({
   return (
     <div>
       <div
-        className={clsx("shadow-md bg-white rounded-md flex items-center", {
-          "!bg-browk-red-boy": !!error,
-          "!bg-browk-green-light": !!success,
+        className={clsx("shadow-browk bg-white rounded-md flex items-center", {
+          "!bg-browk-red-boy !shadow-browk-input-error": !!error,
+          "!bg-browk-green-light !shadow-browk-input-success": !!success,
           "!bg-browk-gray-l": rest.disabled,
         })}
       >
