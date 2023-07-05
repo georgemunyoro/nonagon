@@ -4,11 +4,15 @@ import "./App.css";
 import { ButtonDocs } from "./components/Button/Button.docs";
 import { InputDocs } from "./components/Input/Input.docs";
 import clsx from "clsx";
+import { BadgeDocs } from "./components/Badge/Badge.docs";
 
 const sections = {
   Inputs: {
     Input: InputDocs,
     Button: ButtonDocs,
+  },
+  "Data Display": {
+    Badge: BadgeDocs,
   },
 } as const;
 
