@@ -13,8 +13,6 @@ function App() {
     component: InputDocs,
   });
 
-  console.log(selectedComponent)
-
   return (
     <div className="w-screen h-screen overflow-hidden flex">
       <DocsSidebar
@@ -22,7 +20,7 @@ function App() {
         setSelectedComponent={setSelectedComponent}
       />
       <div className="w-full flex flex-col p-10 overflow-auto">
-        {selectedComponent?.component()}
+        <selectedComponent.component />
       </div>
     </div>
   );
