@@ -1,29 +1,96 @@
+import { useEffect, useRef, useState } from "react";
 import { MenuOption as IMenuOption, MenuProps } from "./Menu.types";
 import clsx from "clsx";
+import { useClickAway } from "react-use";
 
 export const Menu = ({
   options,
   onClickMenuOption,
   isOpen,
+  position,
+  onClose,
   ...rest
 }: MenuProps) => {
+  const elementRef = useRef<HTMLDivElement>(null);
+
+  const [actualPosition, setActualPosition] = useState<{
+    x: number;
+    y: number;
+  } | null>(null);
+
+  const [isActuallyOpen, setIsActuallyOpen] = useState(isOpen);
+
+  useEffect(() => {
+    if (!isOpen) {
+      setIsActuallyOpen(false);
+      return;
+    }
+
+    if (!position) return;
+
+    const parentRect =
+      elementRef.current?.parentElement?.getBoundingClientRect();
+    const elementRect = elementRef.current?.getBoundingClientRect();
+
+    if (!parentRect || !elementRect) return;
+
+    const willOverflowRight = position.x + elementRect.width > parentRect.right;
+    const willOverflowBottom =
+      position.y + elementRect.height > parentRect.bottom;
+    const willOverflowLeft = position.x < parentRect.left;
+    const willOverflowTop = position.y < parentRect.top;
+
+    let actualX = position.x;
+    let actualY = position.y;
+
+    if (willOverflowRight) actualX = parentRect.right - elementRect.width;
+    if (willOverflowBottom) actualY = parentRect.bottom - elementRect.height;
+    if (willOverflowLeft) actualX = parentRect.left;
+    if (willOverflowTop) actualY = parentRect.top;
+
+    console.log("willOverflowRight", willOverflowRight);
+
+    setActualPosition({
+      x: actualX,
+      y: actualY,
+    });
+
+    setIsActuallyOpen(true);
+  }, [position, isOpen]);
+
+  useClickAway(elementRef, () => {
+    if (onClose) onClose();
+  });
+
   return (
     <div
       {...rest}
+      ref={elementRef}
       className={clsx(
-        "shadow-[0px_4px_10px_0px] shadow-gray-300 rounded-md w-[250px] duration-100",
+        "shadow-[0px_4px_10px_0px] shadow-gray-300 rounded-md w-[250px] duration-200 bg-white",
         {
-          "h-[0px]": !isOpen,
+          hidden: !isActuallyOpen && !isOpen,
+          "opacity-0": isOpen && !isActuallyOpen,
+          absolute: position !== undefined,
         }
       )}
+      style={
+        position !== undefined
+          ? {
+              top: actualPosition?.y,
+              left: actualPosition?.x,
+            }
+          : {}
+      }
     >
       {options?.map((option, index) => {
         const isSection = "section" in option;
 
         if (isSection) {
           return (
-            <div className="py-2">
+            <div className={clsx("py-2")}>
               <MenuSection
+                key={index}
                 label={option.section}
                 options={option.options}
                 onClickMenuOption={(e) => onClickMenuOption?.(e)}
@@ -34,7 +101,7 @@ export const Menu = ({
 
         return (
           <MenuOption
-            key={index}
+            key={option.value}
             {...option}
             onClickMenuOption={onClickMenuOption}
           />

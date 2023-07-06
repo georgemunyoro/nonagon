@@ -23,7 +23,7 @@ export const DocsSidebar = ({
   setSelectedComponent: any;
 }) => {
   return (
-    <div className="border-r-2 border-browk-disabled w-[500px] h-[100vh] flex flex-col items-start py-14 gap-8 pl-16">
+    <div className="border-r-2 border-browk-disabled w-[400px] lg:w-[500px] h-[100vh] flex flex-col items-start py-14 gap-8 lg:pl-16">
       <img
         className="h-[40px] object-contain"
         src="https://camo.githubusercontent.com/8f91583ca120b94458772b65338e24a01b83c0ed4909f3f00e876eb9b19e0b75/68747470733a2f2f692e6962622e636f2f5a366e564e774a2f6769746875622d6c6f676f2e706e67"
@@ -93,7 +93,7 @@ function SidebarItem({
       className={clsx(
         "hover:text-browk-hover pl-4 cursor-pointer p-2 duration-150",
         selectedComponent?.name === label &&
-          "text-browk-primary bg-browk-disabled rounded-l-md"
+          "text-browk-primary bg-browk-disabled lg:rounded-l-md"
       )}
       onClick={() =>
         setSelectedComponent({
