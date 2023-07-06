@@ -1,3 +1,4 @@
+import React from "react";
 import { renderWithProps } from "./docs/renderWithProps";
 
 type ComponentDocs = {
@@ -17,12 +18,16 @@ export const ComponentDocsTable = ({
   return (
     <div>
       {title && <h1 className="text-xl font-bold montserrat">{title}</h1>}
-      {componentDocs.map((doc) => (
-        <div className="p-2 flex flex-col">
-          <p className="text-gray-600">{doc.name}</p>
-          <div>{renderWithProps(doc.component, withProps)}</div>
-        </div>
-      ))}
+      {componentDocs.map((doc) => {
+        if (!React.isValidElement(doc.component)) return null;
+
+        return (
+          <div className="p-2 flex flex-col">
+            <p className="text-gray-600">{doc.name}</p>
+            <div>{renderWithProps(doc.component, withProps)}</div>
+          </div>
+        );
+      })}
     </div>
   );
 };

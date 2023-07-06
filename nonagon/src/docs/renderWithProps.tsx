@@ -1,5 +1,5 @@
 import React from "react";
 
-export const renderWithProps = (Component: React.ReactElement, props: any) => {
-  return React.cloneElement(Component, props);
+export const renderWithProps = (component: React.ReactElement, props: any) => {
+  return React.cloneElement(component, props);
 };
