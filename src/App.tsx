@@ -1,7 +1,6 @@
-import { ReactElement, useState } from "react";
+import { ReactElement, useEffect, useState } from "react";
 import "./App.css";
 
-import { InputDocs } from "./components/Input/Input.docs";
 import { DocsSidebar } from "./docs/DocsSidebar";
 import { Installation } from "./docs/GettingStarted";
 
@@ -13,6 +12,10 @@ function App() {
     name: "Installation",
     component: Installation,
   });
+
+  useEffect(() => {
+    document.title = `${selectedComponent.name} | Nonagon Docs`;
+  }, [selectedComponent.name]);
 
   return (
     <div className="w-screen h-screen overflow-hidden flex">
