@@ -22,7 +22,7 @@ export const ComponentDocsTable = ({
         if (!React.isValidElement(doc.component)) return null;
 
         return (
-          <div className="p-2 flex flex-col">
+          <div key={doc.name} className="p-2 flex flex-col">
             <p className="text-gray-600">{doc.name}</p>
             <div>{renderWithProps(doc.component, withProps)}</div>
           </div>
