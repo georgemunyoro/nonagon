@@ -3,12 +3,14 @@ import { BadgeDocs } from "../components/Badge/Badge.docs";
 import { ButtonDocs } from "../components/Button/Button.docs";
 import { InputDocs } from "../components/Input/Input.docs";
 import { MenuDocs } from "../components/Menu/Menu.docs";
+import { CheckboxDocs } from "../components/Checkbox/Checkbox.docs";
 
 export const sections = {
   Inputs: {
     Input: InputDocs,
     Button: ButtonDocs,
     Menu: MenuDocs,
+    Checkbox: CheckboxDocs,
   },
   "Data Display": {
     Badge: BadgeDocs,
@@ -93,7 +95,7 @@ function SidebarItem({
       className={clsx(
         "hover:text-browk-hover pl-4 cursor-pointer p-2 duration-150",
         selectedComponent?.name === label &&
-          "text-browk-primary bg-browk-disabled lg:rounded-l-md"
+          "text-browk-primary bg-browk-disabled lg:rounded-l-md",
       )}
       onClick={() =>
         setSelectedComponent({
