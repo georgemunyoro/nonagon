@@ -5,6 +5,7 @@ import { InputDocs } from "../components/Input/Input.docs";
 import { MenuDocs } from "../components/Menu/Menu.docs";
 import { CheckboxDocs } from "../components/Checkbox/Checkbox.docs";
 import { Installation } from "./GettingStarted";
+import { TagDocs } from "../components/Tag/Tag.docs";
 
 export const sections = {
   "Getting Started": {
@@ -18,6 +19,9 @@ export const sections = {
   },
   "Data Display": {
     Badge: BadgeDocs,
+  },
+  Misc: {
+    Tag: TagDocs,
   },
 };
 
