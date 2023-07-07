@@ -48,8 +48,6 @@ export const Menu = ({
     if (willOverflowLeft) actualX = parentRect.left;
     if (willOverflowTop) actualY = parentRect.top;
 
-    console.log("willOverflowRight", willOverflowRight);
-
     setActualPosition({
       x: actualX,
       y: actualY,

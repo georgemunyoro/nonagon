@@ -27,7 +27,6 @@ export const Checkbox = ({
         checked={isActuallyChecked}
         onChange={(e) => {
           if (disabled) return;
-          console.log(e.target.checked);
           setIsActuallyChecked(e.target.checked);
           rest.onChange?.(e);
         }}

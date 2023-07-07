@@ -96,7 +96,7 @@ export const MenuDocs = () => {
         >
           <div className="p-2 text-browk-primary flex items-center gap-1">
             <CursorClick size={18} />
-            Right click anywhere in this box to open the menu.
+            Right click anywhere in this box to open a context menu.
           </div>
           <Menu
             position={menuPosition}
