@@ -3,14 +3,15 @@ import "./App.css";
 
 import { InputDocs } from "./components/Input/Input.docs";
 import { DocsSidebar } from "./docs/DocsSidebar";
+import { Installation } from "./docs/GettingStarted";
 
 function App() {
   const [selectedComponent, setSelectedComponent] = useState<{
     name: string;
     component: () => ReactElement;
   }>({
-    name: "Input",
-    component: InputDocs,
+    name: "Installation",
+    component: Installation,
   });
 
   return (
