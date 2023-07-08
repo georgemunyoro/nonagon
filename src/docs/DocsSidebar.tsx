@@ -6,6 +6,7 @@ import { MenuDocs } from "../components/Menu/Menu.docs";
 import { CheckboxDocs } from "../components/Checkbox/Checkbox.docs";
 import { Installation } from "./GettingStarted";
 import { TagDocs } from "../components/Tag/Tag.docs";
+import { SwitchDocs } from "../components/Switch/Switch.docs";
 
 export const sections = {
   "Getting Started": {
@@ -16,6 +17,7 @@ export const sections = {
     Button: ButtonDocs,
     Menu: MenuDocs,
     Checkbox: CheckboxDocs,
+    Switch: SwitchDocs,
   },
   "Data Display": {
     Badge: BadgeDocs,
@@ -102,7 +104,7 @@ function SidebarItem({
       className={clsx(
         "hover:text-browk-hover pl-4 cursor-pointer p-2 duration-150",
         selectedComponent?.name === label &&
-          "text-browk-primary bg-browk-disabled lg:rounded-l-md"
+        "text-browk-primary bg-browk-disabled lg:rounded-l-md",
       )}
       onClick={() =>
         setSelectedComponent({

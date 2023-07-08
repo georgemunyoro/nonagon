@@ -19,7 +19,7 @@ export const TagDocs = () => {
         Tag
       </a>
       <div className="flex gap-8 p-2">
-        <ComponentDocsTable title="Primary" componentDocs={docs} />
+        <ComponentDocsTable componentDocs={docs} />
       </div>
     </div>
   );
